@@ -37,7 +37,7 @@ task-manager-api/
 ### Installation
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/dubeymnthn/TaskManager.git
 
 # Navigate to project directory
 cd task-manager-api
@@ -92,12 +92,44 @@ npm run dev
 
 ## 💬 Contact
 **Your Name**
-- GitHub: @yourusername
-- Email: your.email@example.com
+- GitHub: @dubeymnthn
+- Email: manthandubey5@gmail.com
+
 
 ## 📜 License
-MIT License
+
+This project is licensed under the MIT License - see the full license details below:
+
 ```
+MIT License
+
+Copyright (c) 2024 [Your Name]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+### License Notes
+- Open-source and free to use
+- Commercial use allowed
+- Modification and distribution permitted
+- No warranty provided
+
 
 ## 🏆 Interview Preparation Tips
 - Explain architectural decisions
@@ -106,4 +138,4 @@ MIT License
 - Demonstrate understanding of RESTful principles
 ```
 
-This README provides a comprehensive overview that showcases your technical skills, project structure, and professional approach to API development. It's designed to impress during technical interviews by demonstrating depth of understanding and clean implementation.
+
