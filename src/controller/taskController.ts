@@ -1,6 +1,8 @@
 import { Request, Response } from 'express';
 import TaskService from '../services/taskService';
 import { CreateTaskDTO, UpdateTaskDTO } from '../types/task';
+import { v4 as uuidv4 } from 'uuid'; // To generate a unique ID for tasks
+
 
 export const createTask = (req: Request, res: Response) => {
     const taskData: CreateTaskDTO = req.body;
@@ -8,7 +10,13 @@ export const createTask = (req: Request, res: Response) => {
         return res.status(400).json({ message: 'Invalid task data' });
     }
 
-    const newTask = TaskService.createTask(taskData);
+    const newTask = {
+        ...taskData,
+        id: uuidv4(),  // Generate a new unique ID using uuid
+    };
+
+    TaskService.createTask(newTask);
+
     res.status(201).json(newTask);
 };
 
