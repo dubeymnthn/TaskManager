@@ -9,15 +9,9 @@ export const createTask = (req: Request, res: Response) => {
     if (!taskData.title || typeof taskData.completed !== 'boolean') {
         return res.status(400).json({ message: 'Invalid task data' });
     }
+    TaskService.createTask(taskData);
 
-    const newTask = {
-        ...taskData,
-        id: uuidv4(),  // Generate a new unique ID using uuid
-    };
-
-    TaskService.createTask(newTask);
-
-    res.status(201).json(newTask);
+    res.status(201).json(taskData);
 };
 
 export const getAllTasks = (req: Request, res: Response) => {
